@@ -1,16 +1,15 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   Drawer,
   Divider,
   Collapse,
   List,
   ListItem,
-  ListItemIcon,
   ListItemText,
   ListSubheader,
 } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { StarBorder } from "@material-ui/icons";
+import Chips from "../Chips/Chips";
 
 export default function FoodDictionary() {
   const [open, setOpen] = React.useState(true);
@@ -47,10 +46,9 @@ export default function FoodDictionary() {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem className={classes.nested}>
-              <ListItemIcon>
-                <StarBorder />
-              </ListItemIcon>
-              <ListItemText primary="Starred" />
+              <Suspense fallback={null}>
+                <Chips />
+              </Suspense>
             </ListItem>
           </List>
         </Collapse>

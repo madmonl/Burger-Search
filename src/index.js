@@ -11,6 +11,11 @@ import {
   createMuiTheme,
   ThemeProvider,
 } from "@material-ui/core/styles";
+import { ReactQueryConfigProvider } from "react-query";
+
+const queryConfig = {
+  suspense: true,
+};
 
 const theme = createMuiTheme({
   direction: "rtl",
@@ -18,13 +23,15 @@ const theme = createMuiTheme({
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <StylesProvider jss={jss}>
-        <App />
-      </StylesProvider>
-    </ThemeProvider>
-  </React.StrictMode>,
+  <ReactQueryConfigProvider config={queryConfig}>
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <StylesProvider jss={jss}>
+          <App />
+        </StylesProvider>
+      </ThemeProvider>
+    </React.StrictMode>
+  </ReactQueryConfigProvider>,
   document.getElementById("root")
 );
 
