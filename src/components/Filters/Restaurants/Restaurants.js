@@ -3,6 +3,7 @@ import { FormControlLabel, Checkbox } from "@material-ui/core";
 
 export default function Restaurants({ restaurants, setRestaurants }) {
   const handleChange = (restaurant) => {
+    console.log(restaurant);
     setRestaurants({
       ...restaurants,
       [restaurant.name]: {

@@ -45,8 +45,12 @@ export default function SidebarFilters({
         component="nav"
         aria-labelledby="nested-list-subheader"
         subheader={
-          <ListSubheader component="div" id="nested-list-subheader">
-            בחר מרכיבים שאתה אוהב
+          <ListSubheader
+            disableSticky
+            component="div"
+            id="nested-list-subheader"
+          >
+            בחר מרכיבים ומסעדות שאתה אוהב
           </ListSubheader>
         }
       >

@@ -1,0 +1,12 @@
+{
+  "dishes" : {
+    "Butler Burger" : [ "איולי", "אורגולה", "חמוצים", "ריבת בצל" ],
+    "Butler Cheese Burger" : [ "איולי", "אורגולה", "חמוצים", "ריבת בצל" ],
+    "Coco burger" : [ "ראגו פטריות ובייקון", "רוטב עגבניות שרי", "גבינה כחולה", "חמאת מרווה" ],
+    "Golden State Veggie" : [ "פורטובלו", "צ׳דר", "גאודה", "רוטב אלף האיים", "חסה", "עגבנייה", "בצל מקורמל" ],
+    "Nashville Dirty Chicken" : [ "עוף כריספי", "חמאה", "רוטב אלף האיים", "סלט כרוב", "חמוצים" ],
+    "Republic burger" : [ "מיונז", "ריבת שזיפים", "גבינת ברי", "אגוזי לוז", "אורגולה", "ויניגרט בלסמי" ]
+  },
+  "menu" : "https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+  "name" : "vitrina"
+}

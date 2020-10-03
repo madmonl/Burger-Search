@@ -39,13 +39,6 @@ async function fetchRestaurantData() {
 
 app.get("/api/restaurants", async function (_, res) {
   await fetchRestaurantData();
-  console.log(
-    JSON.stringify({
-      restaurants,
-      dishes,
-      ingredients: Array.from(new Set(ingredients)),
-    })
-  );
   res.send({
     restaurants,
     dishes,

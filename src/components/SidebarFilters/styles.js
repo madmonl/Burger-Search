@@ -1,12 +1,8 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const drawerWidth = 300;
+const drawerWidth = 500;
 
 export const useStyles = makeStyles((theme) => ({
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-  },
   drawer: {
     width: drawerWidth,
   },

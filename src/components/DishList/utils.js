@@ -1,5 +1,4 @@
 export function shouldShowDishRestaurantsFiler(dish, restaurants) {
-  console.log("dish", dish);
   let selectedRestaurantsCount = 0;
   let isDishRestaurantSelected = false;
 
@@ -11,8 +10,6 @@ export function shouldShowDishRestaurantsFiler(dish, restaurants) {
       selectedRestaurantsCount++;
     }
   }
-
-  console.log("isDishRestaurantSelected", isDishRestaurantSelected);
 
   return selectedRestaurantsCount === 0 ? true : isDishRestaurantSelected;
 }

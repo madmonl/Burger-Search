@@ -12,9 +12,11 @@ export default function Ingredients({ ingredients, setIngredients }) {
     });
   };
 
+  const sortedIngredients = Object.keys(ingredients).sort();
+
   return (
     <div className={classes.chipsContainer}>
-      {Object.keys(ingredients).map((ingredient) => {
+      {sortedIngredients.map((ingredient) => {
         return ingredients[ingredient] ? (
           <Chip
             className={classes.chip}
