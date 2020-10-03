@@ -1,0 +1,44 @@
+{
+  "restaurants": {
+    "vitrina": {
+      "dishes": [
+        "Butler Burger",
+        "Butler Cheese Burger",
+        "Coco burger",
+        "Golden State Veggie",
+        "Nashville Dirty Chicken",
+        "Republic burger"
+      ]
+    }
+  },
+  "dishes":{
+    "Butler Burger":
+    {
+      "menu": "https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["איולי","אורגולה","חמוצים","ריבת בצל"],
+        "restaurant":"vitrina"
+    },
+    "Butler Cheese Burger":{
+      "menu":"https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["איולי","אורגולה","חמוצים","ריבת בצל"],
+      "restaurant":"vitrina"
+    },"Coco burger":{
+      "menu":"https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["ראגו פטריות ובייקון","רוטב עגבניות שרי","גבינה כחולה","חמאת מרווה"],
+      "restaurant":"vitrina"
+    },"Golden State Veggie":{
+      "menu":"https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["פורטובלו","צ׳דר","גאודה","רוטב אלף האיים","חסה","עגבנייה","בצל מקורמל"],
+      "restaurant":"vitrina"
+    },"Nashville Dirty Chicken":{
+      "menu":"https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["עוף כריספי","חמאה","רוטב אלף האיים","סלט כרוב","חמוצים"],
+      "restaurant":"vitrina"
+    },"Republic burger":{
+      "menu":"https://www.google.com/search?q=vitrina+tel+aviv&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5xbS29JXsAhXSzaQKHTEJANkQ_AUoAXoECB4QAw&biw=1792&bih=1009&dpr=2#imgrc=C97Pj5Ke2lSNmM",
+      "ingredients":["מיונז","ריבת שזיפים","גבינת ברי","אגוזי לוז","אורגולה","ויניגרט בלסמי"],
+      "restaurant":"vitrina"
+    }
+  },
+    "ingredients":["איולי","אורגולה","חמוצים","ריבת בצל","ראגו פטריות ובייקון","רוטב עגבניות שרי","גבינה כחולה","חמאת מרווה","פורטובלו","צ׳דר","גאודה","רוטב אלף האיים","חסה","עגבנייה","בצל מקורמל","עוף כריספי","חמאה","סלט כרוב","מיונז","ריבת שזיפים","גבינת ברי","אגוזי לוז","ויניגרט בלסמי"]
+}

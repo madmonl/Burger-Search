@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -14,7 +14,9 @@ import {
 import { ReactQueryConfigProvider } from "react-query";
 
 const queryConfig = {
-  suspense: true,
+  queries: {
+    suspense: true,
+  },
 };
 
 const theme = createMuiTheme({
@@ -27,7 +29,9 @@ ReactDOM.render(
     <React.StrictMode>
       <ThemeProvider theme={theme}>
         <StylesProvider jss={jss}>
-          <App />
+          <Suspense fallback={<h1>טוען מרכיבים...</h1>}>
+            <App />
+          </Suspense>
         </StylesProvider>
       </ThemeProvider>
     </React.StrictMode>

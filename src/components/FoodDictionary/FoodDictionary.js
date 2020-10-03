@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import {
   Drawer,
   Divider,
@@ -9,9 +9,9 @@ import {
   ListSubheader,
 } from "@material-ui/core";
 import { useStyles } from "./styles";
-import Chips from "../Chips/Chips";
+import Ingredients from "../Ingredients/Ingredients";
 
-export default function FoodDictionary() {
+export default function FoodDictionary({ ingredients, setIngredients }) {
   const [open, setOpen] = React.useState(true);
   const classes = useStyles();
 
@@ -46,9 +46,10 @@ export default function FoodDictionary() {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem className={classes.nested}>
-              <Suspense fallback={null}>
-                <Chips />
-              </Suspense>
+              <Ingredients
+                ingredients={ingredients}
+                setIngredients={setIngredients}
+              />
             </ListItem>
           </List>
         </Collapse>
