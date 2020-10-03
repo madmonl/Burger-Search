@@ -1,27 +1,10 @@
 import React from "react";
 import { useStyles } from "./styles";
 import { Card, CardContent, Typography, Link } from "@material-ui/core";
-
-function shouldShowDish(dish, ingredients) {
-  let selectedIngredientsCount = 0;
-  let areAllRequiredIngredientsInDish = true;
-
-  for (let [ingredientName, isIngredientSelected] of Object.entries(
-    ingredients
-  )) {
-    if (isIngredientSelected) {
-      selectedIngredientsCount++;
-    }
-
-    if (isIngredientSelected && !dish.ingredients.includes(ingredientName)) {
-      areAllRequiredIngredientsInDish = false;
-    }
-  }
-
-  return selectedIngredientsCount === 0
-    ? true
-    : areAllRequiredIngredientsInDish;
-}
+import {
+  shouldShowDishRestaurantsFiler,
+  shouldShowDishIngredientsFilter,
+} from "./utils.js";
 
 export default function DishList({ restaurants, dishes, ingredients }) {
   const classes = useStyles();
@@ -30,7 +13,9 @@ export default function DishList({ restaurants, dishes, ingredients }) {
       <h1 className={classes.dishesHeader}>רשימת מנות:</h1>
       {Object.keys(dishes).map((dishName) => {
         const dish = dishes[dishName];
-        const shouldShow = shouldShowDish(dish, ingredients);
+        const shouldShow =
+          shouldShowDishIngredientsFilter(dish, ingredients) &&
+          shouldShowDishRestaurantsFiler(dish, restaurants);
 
         return (
           shouldShow && (
@@ -49,7 +34,6 @@ export default function DishList({ restaurants, dishes, ingredients }) {
                   color="textSecondary"
                   gutterBottom
                 >
-                  {console.log("menu", restaurants[dish.restaurant])}
                   <Link href={dish.menu} variant="body2">
                     {dish.restaurant}
                   </Link>

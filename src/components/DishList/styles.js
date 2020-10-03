@@ -8,7 +8,7 @@ export const useStyles = makeStyles({
     textAlign: "left",
   },
   card: {
-    minWidth: 275,
+    minWidth: 600,
   },
   bullet: {
     display: "inline-block",

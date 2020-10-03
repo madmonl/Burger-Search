@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
 import "./App.css";
-import FoodDictionary from "./components/FoodDictionary/FoodDictionary";
+import SidebarFilters from "./components/SidebarFilters/SidebarFilters";
 import DishList from "./components/DishList/DishList";
 
 async function fetchRestaurantData() {
@@ -29,9 +29,11 @@ function App() {
 
   return (
     <div className="App">
-      <FoodDictionary
+      <SidebarFilters
         ingredients={ingredients}
         setIngredients={setIngredients}
+        restaurants={restaurants}
+        setRestaurants={setRestaurants}
       />
       <DishList
         ingredients={ingredients}

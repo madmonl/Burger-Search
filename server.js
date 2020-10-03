@@ -16,6 +16,7 @@ async function fetchRestaurantData() {
     const menu = restaurant.val().menu;
     restaurants[restaurant.key] = {
       dishes: [],
+      name: restaurant.val().name,
     };
     Object.keys(currDishes).forEach((dishName) => {
       const dish = currDishes[dishName];
